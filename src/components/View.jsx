@@ -21,14 +21,21 @@ const View = () => {
       <div className="w-50 border bg-white shadow rounded px-5 pt-3 pb-5">
         <h4>User Details</h4>
         <div className="mb-2">
-          <p>Name:{data.name}</p>
+          <p><strong>Name: </strong>{data.name}</p>
         </div>
         <div className="mb-2">
-          <p>Username:{data.username}</p>
+          <p><strong>Username: </strong>{data.username}</p>
         </div>
         <div className="mb-2">
-          <p>Email:{data.email}</p>
+          <p><strong>Email: </strong>{data.email}</p>
         </div>
+        <div className="mb-2">
+          <p><strong>Phone: </strong>{data.phone}</p>
+        </div>
+        <div className="mb-2">
+          <p><strong>Website: </strong>{data.website}</p>
+        </div>
+
 
         <Link to={`/edit/${id}`} className="btn btn-success me-2">
           Edit
